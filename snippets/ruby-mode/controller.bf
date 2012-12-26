@@ -1,0 +1,1 @@
+#name : generating a before_filter controller#key : bf#group : rails.controller#condition : (rails/controller?)# --before_filter :capture_${1:`(singularize-string (rails/cur-res-title))`}

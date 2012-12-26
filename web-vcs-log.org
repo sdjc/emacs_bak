@@ -1,0 +1,22 @@
+
+* 2012-07-13
+** Downloading file 16:40:30 GMT
+   file [[file:/Users/zhiyekuaile/.emacs.d/site-lisp/nxhtml/nxhtml-base.el][/Users/zhiyekuaile/.emacs.d/site-lisp/nxhtml/nxhtml-base.el]]
+   from http://bazaar.launchpad.net/~nxhtml/nxhtml/main/download/lennart.borgman%40gmail.com-20101228200718-9wwuyehbvtygvstb/nxhtmlbase.el-20100113172514-fyszxn1ypx4ml96h-1/nxhtml-base.el
+   Done.
+
+** Downloading file 16:40:34 GMT
+   file [[file:/Users/zhiyekuaile/.emacs.d/site-lisp/nxhtml/nxhtml-loaddefs.el][/Users/zhiyekuaile/.emacs.d/site-lisp/nxhtml/nxhtml-loaddefs.el]]
+   from http://bazaar.launchpad.net/~nxhtml/nxhtml/main/download/lennart.borgman%40gmail.com-20120119133124-76xcv4dw2lfxo65v/nxhtmlloaddefs.el-20080927190633-bvdatx6qc6m3ze5h-1/nxhtml-loaddefs.el
+   Done.
+
+** Downloading file 16:41:03 GMT
+   file [[file:/Users/zhiyekuaile/.emacs.d/site-lisp/nxhtml/nxhtml-web-vcs.el][/Users/zhiyekuaile/.emacs.d/site-lisp/nxhtml/nxhtml-web-vcs.el]]
+   from http://bazaar.launchpad.net/~nxhtml/nxhtml/main/download/lennart.borgman%40gmail.com-20110504235300-ojqwz9z1bxm5dona/nxhtmlwebvcs.el-20100113172514-fyszxn1ypx4ml96h-2/nxhtml-web-vcs.el
+** Downloading file 16:43:09 GMT
+   file [[file:/Users/zhiyekuaile/.emacs.d/site-lisp/nxhtml/web-autoload.el][/Users/zhiyekuaile/.emacs.d/site-lisp/nxhtml/web-autoload.el]]
+   from http://bazaar.launchpad.net/~nxhtml/nxhtml/main/download/lennart.borgman%40gmail.com-20101219013302-uc6gbtmhecqw8ve2/webautoload.el-20091227180846-favloh4bvxp3i0mh-3/web-autoload.el
+   Done.
+
+* nXhtml: Download Part by Part as Needed
+

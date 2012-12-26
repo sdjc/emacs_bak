@@ -1,0 +1,17 @@
+#contributor : Satoshi Nishimura <nishim314@gmail.com>
+#name : class ... 
+#group : definitions
+# --
+class ${1:`(capitalize ((lambda (a)
+   (substring a 0 (let ((case-fold-search nil))
+                   ( string-match "\\." a)
+                  ))
+   )
+ (file-name-sans-extension (buffer-name))
+ ))`}
+{
+   public function __construct()
+   {
+      $0
+   }
+}

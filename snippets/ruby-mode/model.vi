@@ -1,0 +1,6 @@
+#name : validates_inclusion_of
+#key : vi
+#group : rails.model
+#condition : (rails/model?)
+# --
+validates_inclusion_of :${1:name},in=> ${2:}

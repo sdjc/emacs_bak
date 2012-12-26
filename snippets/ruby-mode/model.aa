@@ -1,0 +1,6 @@
+#name : attr_accessible
+#key : aa
+#group : rails.model
+#condition : (rails/model?)
+# --
+attr_accessible :${1:model}

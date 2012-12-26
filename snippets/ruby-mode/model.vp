@@ -1,0 +1,6 @@
+#name : validates_presence_of
+#key : vp
+#group : rails.model
+#condition : (rails/model?)
+# --
+validates :${1:name}, :presence => :true

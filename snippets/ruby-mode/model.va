@@ -1,0 +1,6 @@
+#name : validates_acceptance_of
+#key : va
+#group : rails.model
+#condition : (rails/model?)
+# --
+validates  :${1:value}, :acceptance => :true
