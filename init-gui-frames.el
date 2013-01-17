@@ -59,9 +59,12 @@
               (unless window-system
                 (set-frame-parameter nil 'menu-bar-lines 0)))))
 
-(global-set-key [M-left] 'windmove-left)
-(global-set-key [M-right] 'windmove-right)
+;; (global-set-key [M-left] 'windmove-left)
+;; (global-set-key [M-right] 'windmove-right)
 ;;(global-set-key [M-up] 'windmove-up)
 ;;(global-set-key [M-down] 'windmove-down)
-
+(setq frame-title-format 
+      '((:eval (funcall (lambda () (if buffer-file-name 
+                                       buffer-file-name 
+                                     (buffer-name)))))))
 (provide 'init-gui-frames)

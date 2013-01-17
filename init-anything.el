@@ -1,5 +1,5 @@
 ;(global-set-key (kbd "M-x") 'anything-M-x)
-(global-set-key (kbd "C-x b") 'anything-filelist+)
+;; (global-set-key (kbd "C-x b") 'anything-filelist+)
 
 
 (defvar anything-c-source-gtags-select

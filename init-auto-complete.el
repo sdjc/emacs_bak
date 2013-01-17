@@ -34,7 +34,7 @@
 
 (dolist (mode '(magit-log-edit-mode log-edit-mode org-mode text-mode haml-mode
                 sass-mode yaml-mode csv-mode espresso-mode haskell-mode
-                html-mode sh-mode smarty-mode clojure-mode
+                html-mode sh-mode smarty-mode clojure-mode sgml-mode
                 lisp-mode textile-mode markdown-mode tuareg-mode php-mode ruby-mode
                 js3-mode css-mode less-css-mode))
   (add-to-list 'ac-modes mode))

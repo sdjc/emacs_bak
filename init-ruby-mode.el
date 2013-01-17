@@ -2,7 +2,7 @@
 (setq interpreter-mode-alist
       (cons '("ruby" . ruby-mode) interpreter-mode-alist))
 
-(add-auto-mode 'ruby-mode "\\.rb$" "Rakefile$" "\.rake$" "\.rxml$" "\.rjs$" ".irbrc$" "\.builder$" "\.ru$" "\.gemspec$" "Gemfile$")
+(add-auto-mode 'ruby-mode "\\.rb$" "Rakefile$" "\.rake$" "\.rxml$" "\.rjs$" ".irbrc$" "\.builder$" "\.ru$" "\.gemspec$" "Gemfile$" )
 
 
 (autoload 'run-ruby "inf-ruby" "Run an inferior Ruby process")
@@ -16,7 +16,7 @@
 ;;----------------------------------------------------------------------------
 ;; Ruby - flymake
 ;;----------------------------------------------------------------------------
-(add-hook 'ruby-mode-hook 'flymake-ruby-load)
+
 
 
 ;;----------------------------------------------------------------------------
@@ -106,5 +106,19 @@
 (autoload 'yaml-mode "yaml-mode" "Major mode for YAML source")
 (add-auto-mode 'yaml-mode "\\.ya?ml$")
 
+  (eval-after-load 'ruby-mode
+    '(progn
+       (defun prelude-ruby-mode-defaults ()
+         (inf-ruby-setup-keybindings)
+         ;; turn off the annoying input echo in irb
+         (setq comint-process-echoes t)
+         (ruby-block-mode t)
+         (ruby-end-mode +1)
+         (ruby-tools-mode +1)
+         ;; CamelCase aware editing operations
+         (subword-mode +1))
+       (add-hook 'ruby-mode-hook 'flymake-ruby-load)
+       )
+    )
 
 (provide 'init-ruby-mode)

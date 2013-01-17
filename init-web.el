@@ -45,8 +45,4 @@
 
 (define-key sgml-mode-map (kbd "C-c C-r") 'rename-sgml-tag)
 
-
-
-
-
 (provide 'init-web)

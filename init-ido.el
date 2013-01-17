@@ -17,7 +17,8 @@
       (ido-switch-buffer)
     (find-file (ido-completing-read "Open file: " recentf-list nil t))))
 
-(global-set-key [(meta f11)] 'steve-ido-choose-from-recentf)
+;; (global-set-key [(meta f11)] 'steve-ido-choose-from-recentf)
+(global-set-key (kbd "C-x C-r") 'steve-ido-choose-from-recentf)
 
 
 ;;----------------------------------------------------------------------------
