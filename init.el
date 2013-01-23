@@ -38,7 +38,7 @@
 (require 'init-windows)
 (require 'init-sessions)
 (require 'init-fonts)
-;(require 'init-mmm)
+;; (require 'init-mmm)
 (require 'init-web)
 (require 'init-growl)
 
@@ -56,11 +56,11 @@
 (require 'init-sh)
 (require 'init-php)
 (require 'init-org)
-;(require 'init-nxml)
+;; (require 'init-nxml)
 (require 'init-css)
 (require 'init-haml)
 (require 'init-python-mode)
-;(require 'init-haskell)
+(require 'init-haskell)
 (require 'init-ruby-mode)
 (require 'init-rails)
 

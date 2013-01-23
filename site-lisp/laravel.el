@@ -1,4 +1,4 @@
-;;; symfony.el -- minor mode for editting PHP symfony flamework code.
+;;; laravle.el -- minor mode for editting PHP symfony flamework code.
 
 ;; Copyright (c) 2009 by KAYAC Inc.
 
@@ -46,10 +46,8 @@
 ;; `anything-project.el' https://github.com/imakado/anything-project
 ;; `anything-grep'  http://www.emacswiki.org/emacs/anything-grep.el
 
-;; `symfony.el' http://github.com/imakado/emacs-symfony/tree/master (this file)
-
 ;; add these lines to your .emacs file:
-;; (require 'symfony)
+;; (require 'laravel)
 
 
 ;;; TODO:
@@ -76,17 +74,15 @@
 
 (require 'anything)
 (require 'anything-match-plugin)
-(require 'anything-project)
-(require 'anything-grep)
 (require 'php-completion)
 
 
-(defconst sf:MODULES-DIR-NAME "modules")
-(defconst sf:TEMPLATES-DIR-NAME "templates")
-(defconst sf:APP-MODULE-ACTION-DIR-NAME "actions")
+
+(defconst MODULES-DIR-NAME "models")
+(defconst sf:TEMPLATES-DIR-NAME "views")
+(defconst sf:APP-MODULE-ACTION-DIR-NAME "controllers")
 (defconst sf:VALIDATORS-DIR-NAME "validate")
-(defconst sf:ACTIONS-CLASS-PHP "actions.class.php")
-(defconst sf:ACTIONS-FILE-RULE "Action.class.php")
+
 (defconst sf:TEST-BUFFER "*sf:test*")
 
 (defvar sf:mode-directory-rules
@@ -1412,4 +1408,4 @@ IF nil, do nothing")
                  (every 'phpcmp-tag-p (phpcmp-etags-get-tags tags))))))
       )))
 
-(provide 'symfony)
+(provide 'laravel)

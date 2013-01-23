@@ -6,9 +6,7 @@
 
 ;(require 'mmm-sample)
 
-
-
-(add-to-list 'auto-mode-alist '("\\.html\\.erb\\'" . html-erb-mode))
+(add-to-list 'auto-mode-alist '("\\.html\\.erb\\.\\php\\'" . html-erb-mode))
 (add-to-list 'auto-mode-alist '("\\.jst\\.ejs\\'"  . html-erb-mode))
 (require 'mmm-auto)
 

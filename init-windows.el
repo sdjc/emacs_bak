@@ -159,6 +159,4 @@ arg move to the left."
                                  nil))
                             (window-list))))
       (select-window (car window-of-buffer)))))
-
-
 (provide 'init-windows)

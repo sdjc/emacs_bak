@@ -3,9 +3,16 @@
 ;;----------------------------------------------------------------------------
 ;; (require 'mmm-mode)
 (require 'rhtml-mode)
-(setq mweb-default-major-mode 'html-erb-mode)
+(require 'multi-web-mode)
 
-(add-to-list 'auto-mode-alist '("\\.html\\.erb\\'" . html-erb-mode))
+(setq mweb-default-major-mode 'html-erb-mode)
+(add-to-list 'auto-mode-alist '("\\.php\\'" . php-mode))
+(add-to-list 'auto-mode-alist '("\\.php\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.html\\.php\\'" . html-erb-mode))
+(add-to-list 'auto-mode-alist '("\\.html\\.erb\\'" . web-mode))
+(add-hook 'sgml-mode-hook 'web-mode)
+
+
 (add-to-list 'auto-mode-alist '("\\.html\\.erb\\'" . multi-web-mode))
 (add-hook 'html-mode 'multi-web-mode-major-mode)
                   ;; (php-mode "{{" "}}")
